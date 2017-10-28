@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen" type="text/css">
+body { background: #E9E5E2 ; }
+
+#skill { 
+	list-style: none;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 296px;
+	margin: 50px auto 0;
+	position: relative;
+	line-height: 2em;
+	padding: 30px 0;
+}
+
+#skill li { 
+	margin-bottom:50px; 
+	background:#e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+	height:20px; 
+	border-radius:10px; 
+	-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	  
+}
+
+#skill li h3 { 
+	position:relative; 
+	top:-25px;
+}
+
+.bar { 
+	height:18px; 
+	margin:1px 2px;  
+	position:absolute;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;		
+}
+
+.product-mgmt {
+	width:100%; 
+	-moz-animation:product-mgmt 2s ease-out;
+	-webkit-animation:product-mgmt 2s ease-out;
+	background-color: #e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#CBCBCB));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070);
+}
+
+.biz-mgmt {
+	width:90%;
+	-moz-animation:biz-mgmt 3s ease-out;
+	-webkit-animation:biz-mgmt 3s ease-out;
+	background-color: #707070;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070);
+}
+
+.Finance {
+	width:85%;
+	-moz-animation:Finance 2s ease-out;
+	-webkit-animation:Finance 2s ease-out;
+	background-color: #707070;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070);
+}
+
+.SaaS {
+	width:80%;
+	-moz-animation:SaaS 2s ease-out;
+	-webkit-animation:SaaS 2s ease-out;
+	background-color: #707070;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#707070));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070)	
+}
+
+.Customer {
+	width:80%;
+	-moz-animation:Customer 2s ease-out;
+	-webkit-animation:Customer 2s ease-out;
+	background-color: #707070;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#707070));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070)	
+}      
+.Marketing {
+	width:60%;
+	-moz-animation:Marketing 2s ease-out;
+	-webkit-animation:Marketing 2s ease-out;
+	background-color: #707070;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#707070));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070)	
+}      
+
+.B2B {
+	width:70%;
+	-moz-animation:B2B 2s ease-out;
+	-webkit-animation:B2B 2s ease-out;
+	background-color: #707070;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#707070));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070)	
+}      
+      
+.Agile {
+	width:40%;
+	-moz-animation:Agile 2s ease-out;
+	-webkit-animation:Agile 2s ease-out;
+	background-color: #707070
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#707070));
+	background-image: -webkit-linear-gradient(top, #707070, #707070);
+	background-image: -moz-linear-gradient(top, #707070, #707070);
+	background-image: -ms-linear-gradient(top, #707070, #707070);
+	background-image: -o-linear-gradient(top, #707070, #707070);
+	background-image: linear-gradient(top, #707070, #707070)	
+}
+    
+      
+      
+@-moz-keyframes product-mgmt {0%  { width:0px;} 100%{ width:100%;}  }
+@-moz-keyframes biz-mgmt        { 0%  { width:0px;} 90%{ width:90%;}  }
+@-moz-keyframes Finance      { 0%  { width:0px;} 100%{ width:85%;}  }
+@-moz-keyframes SaaS   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes Customer   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes Marketing   { 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes B2B   { 0%  { width:0px;} 100%{ width:70%;}  }
+@-moz-keyframes Agile   { 0%  { width:0px;} 100%{ width:40%;}  }
+      
+      
+      
+@-webkit-keyframes product-mgmt       { 0%  { width:0px;} 100%{ width:100%;}  }
+@-webkit-keyframes biz-mgmt        { 0%  { width:0px;} 90%{ width:90%;}  }
+@-webkit-keyframes Finance      { 0%  { width:0px;} 100%{ width:85%;}  }
+@-webkit-keyframes SaaS   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes Customer   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-webkit-keyframes Marketing   { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes B2B   { 0%  { width:0px;} 100%{ width:70%;}  }
+@-webkit-keyframes Agile   { 0%  { width:0px;} 100%{ width:40%;}  }
+         </style>
+  </head>
+  <body>
+    <ul id="skill">
+      <li><span class="bar product-mgmt"></span>
+        <h3>Product Management</h3>
+      </li>
+      <li><span class="bar biz-mgmt"></span>
+        <h3>Business Management</h3>
+      </li>
+      <li><span class="bar Finance"></span>
+        <h3>Financial Responsibility</h3>
+      </li>
+      <li><span class="bar SaaS"></span>
+        <h3>SaaS Software</h3>
+      </li>
+      <li><span class="bar Customer"></span>
+        <h3>Customer Engagement</h3>
+      </li>
+      <li><span class="bar Marketing"></span>
+        <h3>Marketing (very pragmatic)</h3>
+      </li>
+      <li><span class="bar B2B"></span>
+        <h3>Enterprise Focus (B2B)</h3>
+      </li>
+      <li><span class="bar Agile"></span>
+        <h3>Agile Methodologies</h3>
+      </li>
+    </ul>
+    
+  </body>
+</html>
