@@ -59,7 +59,7 @@ body { background: #E9E5E2 ; }
 }
 
 .biz-mgmt {
-	width:90%;
+	width:95%;
 	-moz-animation:biz-mgmt 3s ease-out;
 	-webkit-animation:biz-mgmt 3s ease-out;
 	background-color: #707070;
@@ -110,7 +110,7 @@ body { background: #E9E5E2 ; }
 	background-image: linear-gradient(top, #707070, #707070)	
 }      
 .Marketing {
-	width:60%;
+	width:85%;
 	-moz-animation:Marketing 2s ease-out;
 	-webkit-animation:Marketing 2s ease-out;
 	background-color: #707070;
@@ -151,52 +151,59 @@ body { background: #E9E5E2 ; }
       
       
 @-moz-keyframes product-mgmt {0%  { width:0px;} 100%{ width:100%;}  }
-@-moz-keyframes biz-mgmt        { 0%  { width:0px;} 90%{ width:90%;}  }
+@-moz-keyframes biz-mgmt        { 0%  { width:0px;} 95%{ width:95%;}  }
 @-moz-keyframes Finance      { 0%  { width:0px;} 100%{ width:85%;}  }
 @-moz-keyframes SaaS   { 0%  { width:0px;} 100%{ width:80%;}  }
 @-moz-keyframes Customer   { 0%  { width:0px;} 100%{ width:80%;}  }
-@-moz-keyframes Marketing   { 0%  { width:0px;} 100%{ width:60%;}  }
+@-moz-keyframes Marketing   { 0%  { width:0px;} 100%{ width:85%;}  }
 @-moz-keyframes B2B   { 0%  { width:0px;} 100%{ width:70%;}  }
 @-moz-keyframes Agile   { 0%  { width:0px;} 100%{ width:40%;}  }
       
       
       
 @-webkit-keyframes product-mgmt       { 0%  { width:0px;} 100%{ width:100%;}  }
-@-webkit-keyframes biz-mgmt        { 0%  { width:0px;} 90%{ width:90%;}  }
+@-webkit-keyframes biz-mgmt        { 0%  { width:0px;} 95%{ width:95%;}  }
 @-webkit-keyframes Finance      { 0%  { width:0px;} 100%{ width:85%;}  }
 @-webkit-keyframes SaaS   { 0%  { width:0px;} 100%{ width:80%;}  }
 @-webkit-keyframes Customer   { 0%  { width:0px;} 100%{ width:80%;}  }
-@-webkit-keyframes Marketing   { 0%  { width:0px;} 100%{ width:60%;}  }
+@-webkit-keyframes Marketing   { 0%  { width:0px;} 100%{ width:85%;}  }
 @-webkit-keyframes B2B   { 0%  { width:0px;} 100%{ width:70%;}  }
 @-webkit-keyframes Agile   { 0%  { width:0px;} 100%{ width:40%;}  }
          </style>
   </head>
   <body>
     <ul id="skill">
-      <li><span class="bar product-mgmt"></span>
-        <h3>Product Management</h3>
+      <li><span class="bar Agile"></span>
+        <h3>Agile Methodologies (5 years)</h3>
       </li>
-      <li><span class="bar biz-mgmt"></span>
-        <h3>Business Management</h3>
-      </li>
-      <li><span class="bar Finance"></span>
-        <h3>Financial Responsibility</h3>
+
+
+      <li><span class="bar B2B"></span>
+        <h3>Enterprise Focus (B2B) (7 years)</h3>
+           
+      <li><span class="bar Customer"></span>
+        <h3>Customer Engagement (9 years)</h3>
       </li>
       <li><span class="bar SaaS"></span>
-        <h3>SaaS Software</h3>
-      </li>
-      <li><span class="bar Customer"></span>
-        <h3>Customer Engagement</h3>
+        <h3>SaaS Software (9 years)</h3>
       </li>
       <li><span class="bar Marketing"></span>
-        <h3>Marketing (very pragmatic)</h3>
+        <h3>Marketing (very pragmatic) (10 years)</h3>
       </li>
-      <li><span class="bar B2B"></span>
-        <h3>Enterprise Focus (B2B)</h3>
+
+            <li><span class="bar Finance"></span>
+        <h3>Financial Responsibility (10 years)</h3>
       </li>
-      <li><span class="bar Agile"></span>
-        <h3>Agile Methodologies</h3>
+
+      
+      <li><span class="bar biz-mgmt"></span>
+        <h3>Business Management (10+ years)</h3>
       </li>
+
+      <li><span class="bar product-mgmt"></span>
+      <h3>Product Management (15+ years)</h3>
+      </li>
+
     </ul>
     
   </body>
