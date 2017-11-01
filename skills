@@ -3,27 +3,45 @@
 <head>  
 <script>
 window.onload = function () {
-
+ CanvasJS.addColorSet("greenShades",
+                [//colorSet Array
+                "#2F4F4F",
+                "#008080",
+                "#2E8B57",
+                "#3CB371",
+                "#90EE90"                
+                ]);
 var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
+legend: 
+		{
+			dockInsidePlotArea: true,
+			verticalAlign: "center",
+			horizontalAlign: "left",
+reversed: true               
+		},
+colorSet: "greenShades",	
+animationEnabled: true,
+  animationDuration: 3000,
 	title:{
-		text: "Skills"
+fontSize: 25,
+fontStyle: "normal",
+fontFamily: "optima",
+		text: "Transition from Traditional Engineer to SaaS Product Manager by adding new skills"
 	},
 	axisY :{
 		valueFormatString: "#0,.",
-		suffix: "k"
+		suffix: ""
 	},
 	axisX: {
 		title: "Years"
 	},
-	toolTip: {
-		shared: true
-	},
+
 	data: [{        
 		type: "stackedArea",
 		showInLegend: true,
-		toolTipContent: "<span style=\"color:#4F81BC\"><strong>{name}: </strong></span> {y}",
+	
 		name: "Product Management",
+        markerType: "none",
 		dataPoints: [
 		{ x: 1, y: 3000 },
 		{ x: 2, y: 7000 },
@@ -38,84 +56,90 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		{ x: 11, y: 105000 }
 		]
 	},
+
+{        
+		type: "stackedArea",  
+		name: "Business Line Skills",
+		showInLegend: true,
+  markerType: "none",
+		dataPoints: [
+{ x: 2, y: 4000 },
+{ x: 3, y: 5000 },
+          { x: 4, y: 9000 },
+		{ x: 5, y: 14000 },
+		{ x: 6, y: 14000 },
+		{ x: 7,y: 15000 },
+		{ x: 8,y: 21000 },
+		{ x: 9, y: 31000 },
+		{ x: 10, y: 46000 },
+		{ x: 11, y: 50000 }   
+		]
+	},
 	{        
 		type: "stackedArea",  
-		name: "Product Marketing",
-		toolTipContent: "<span style=\"color:#C0504E\"><strong>{name}: </strong></span> {y}<br><b>Total:<b> #total",
+		name: "Pragmatic Marketing",
 		showInLegend: true,
+      markerType: "none",
 		dataPoints: [
-		{ x: 4, y: 4000 },
-		{ x: 5, y: 6000 },
-		{ x: 6, y: 9000 },
+		{ x: 4, y: 8000 },
+		{ x: 5, y: 14000 },
+		{ x: 6, y: 21000 },
+		{ x: 7,y: 31000 },
+		{ x: 8,y: 21000 },
+		{ x: 9, y: 31000 },
+		{ x: 10, y: 36000 },
+		{ x: 11, y: 51000 }   
+		]
+	},
+           
+           {        
+		type: "stackedArea",  
+		name: "Enterprise Focus",
+
+		showInLegend: true,
+  markerType: "none",
+		dataPoints: [
+		{ x: 4, y: 000 },
+		{ x: 5, y: 000 },
+		{ x: 6, y: 000 },
 		{ x: 7,y: 14000 },
 		{ x: 8,y: 21000 },
 		{ x: 9, y: 31000 },
 		{ x: 10, y: 46000 },
-		{ x: 11, y: 61000 }   
+		{ x: 11, y: 81000 }   
 		]
 	},
 {        
 		type: "stackedArea",  
-		name: "Business",
-		toolTipContent: "<span style=\"color:#C0504E\"><strong>{name}: </strong></span> {y}<br><b>Total:<b> #total",
+		name: "SaaS for the Enterprise",
+
 		showInLegend: true,
+  markerType: "none",
 		dataPoints: [
-		{ x: 4, y: 4000 },
-		{ x: 5, y: 6000 },
-		{ x: 6, y: 9000 },
+		{ x: 4, y: 000 },
+		{ x: 5, y: 000 },
+		{ x: 6, y: 000 },
 		{ x: 7,y: 14000 },
 		{ x: 8,y: 21000 },
 		{ x: 9, y: 31000 },
 		{ x: 10, y: 46000 },
-		{ x: 11, y: 61000 }   
+		{ x: 11, y: 81000 }   
 		]
 	},
 {        
 		type: "stackedArea",  
-		name: "Enterprise",
-		toolTipContent: "<span style=\"color:#C0504E\"><strong>{name}: </strong></span> {y}<br><b>Total:<b> #total",
+		name: "Agile Methodologies",
 		showInLegend: true,
+  markerType: "none",
 		dataPoints: [
-		{ x: 4, y: 4000 },
-		{ x: 5, y: 6000 },
-		{ x: 6, y: 9000 },
-		{ x: 7,y: 14000 },
+		{ x: 4, y: 000 },
+		{ x: 5, y: 000 },
+		{ x: 6, y: 000 },
+		{ x: 7,y:  000 },
 		{ x: 8,y: 21000 },
-		{ x: 9, y: 31000 },
-		{ x: 10, y: 46000 },
-		{ x: 11, y: 61000 }   
-		]
-	},
-{        
-		type: "stackedArea",  
-		name: "SaaS",
-		toolTipContent: "<span style=\"color:#C0504E\"><strong>{name}: </strong></span> {y}<br><b>Total:<b> #total",
-		showInLegend: true,
-		dataPoints: [
-		{ x: 4, y: 4000 },
-		{ x: 5, y: 6000 },
-		{ x: 6, y: 9000 },
-		{ x: 7,y: 14000 },
-		{ x: 8,y: 21000 },
-		{ x: 9, y: 31000 },
-		{ x: 10, y: 46000 },
-		{ x: 11, y: 61000 }   
-		]
-	},
-{        
-		type: "stackedArea",  
-		name: "Agile",
-		toolTipContent: "<span style=\"color:#C0504E\"><strong>{name}: </strong></span> {y}<br><b>Total:<b> #total",
-		showInLegend: true,
-		dataPoints: [
-		{ x: 4, y: 4000 },
-		{ x: 5, y: 6000 },
-		{ x: 6, y: 9000 },
-		{ x: 7,y: 14000 },
-		{ x: 8,y: 21000 },
-		{ x: 9, y: 31000 },
-		{ x: 10, y: 46000 },
-		{ x: 11, y: 61000 }   
+		{ x: 9, y: 41000 },
+		{ x: 10, y: 66000 },
+		{ x: 11, y: 76000 }   
 		]
 	}]
 
@@ -126,7 +150,7 @@ chart.render();
 </script>
 </head>
 <body>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<div id="chartContainer" style="height: 570px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>
